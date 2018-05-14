@@ -123,7 +123,7 @@ export default {
         getData: () => ({
           team
         }),
-        children: posts.map(member => ({
+        children: team.map(member => ({
           path: `/team/${member.data.slug}`,
           component: 'src/containers/Team',
           getData: () => ({
