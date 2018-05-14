@@ -11,6 +11,6 @@ export default withRouteData(({ member }) => (
 		<h3>{member.data.title}</h3>
 		<Moment format="MMMM Do, YYYY">{member.data.date}</Moment>
 		<img className="image" src={member.data.thumbnail} alt="" />
-		<Markdown source={member.bio} escapeHtml={false} />
+		<Markdown source={member.data.bio} escapeHtml={false} />
 	</div>
 ));
