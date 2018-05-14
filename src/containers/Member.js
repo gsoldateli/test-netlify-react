@@ -8,7 +8,7 @@ export default withRouteData(({ member }) => (
 	<div className="blog-post">
 		<Link to="/team/">{'<'} Back</Link>
 		<br />
-		<h3>{member.data.name}</h3>
+		<h3>{member.data.title}</h3>
 		<Moment format="MMMM Do, YYYY">{member.data.date}</Moment>
 		<img className="image" src={member.data.thumbnail} alt="" />
 		<Markdown source={member.bio} escapeHtml={false} />
