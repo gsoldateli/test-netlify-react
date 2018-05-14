@@ -10,7 +10,7 @@ export default withRouteData(({ team }) => (
     <ul>
       {team.map(member => (
         <li key={member.data.slug}>
-          <Link to={`/team/member/${member.data.slug}`}> --> {member.data.title}</Link>
+          <Link to={`/team/member/${member.data.slug}`}> {member.data.title}</Link>
         </li>
       ))}
     </ul>

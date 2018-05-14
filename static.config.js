@@ -84,6 +84,7 @@ function getTeam() {
         resolve(items);
       }
     });
+
   return getFiles();
 }
 
@@ -124,8 +125,8 @@ export default {
           team
         }),
         children: team.map(member => ({
-          path: `/team/${member.data.slug}`,
-          component: 'src/containers/Team',
+          path: `/member/${member.data.slug}`,
+          component: 'src/containers/Member',
           getData: () => ({
             member
           })
